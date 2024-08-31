@@ -2,7 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
     margin: 0;
-    padding: 20px;
+    padding: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,9 +17,10 @@ body {
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: 2px dashed #333;
+    box-shadow: 0 20px 8px rgba(0, 0, 0, 0.1);
     position: relative;
+    border-top: 20px solid #212529; /* Top border with #212529 color */
+    border-bottom: 20px solid #212529; /* Bottom border with #212529 color */
 }
 
 .ticket::before, .ticket::after {
@@ -27,7 +28,7 @@ body {
     width: 40px;
     height: 40px;
     background-color: #fff;
-    border: 2px solid #333;
+    border: 2px solid #32526;
     border-radius: 50%;
     position: absolute;
     top: 50%;
@@ -61,7 +62,7 @@ body {
 
 .ticket .boarding-pass {
     font-size: 14px;
-    background-color: #333;
+    background-color: #7AB730; /* Changed color for "BOARDING PASS" */
     color: #fff;
     padding: 5px;
     border-radius: 5px;
@@ -71,7 +72,7 @@ body {
 }
 
 .ticket .details {
-    font-size: 14px;
+    font-size: 24px;
     line-height: 1.6;
 }
 
