@@ -1,0 +1,91 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.ticket {
+    background-color: #fff;
+    color: #333;
+    width: 800px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 20px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    border-top: 20px solid #212529; /* Top border with #212529 color */
+    border-bottom: 20px solid #212529; /* Bottom border with #212529 color */
+}
+
+.ticket::before, .ticket::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border: 2px solid #32526;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.ticket::before {
+    left: -21px;
+}
+
+.ticket::after {
+    right: -21px;
+}
+
+.ticket .left, .ticket .right {
+    width: 48%;
+}
+
+.ticket h2 {
+    margin: 0;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.ticket p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.ticket .boarding-pass {
+    font-size: 14px;
+    background-color: #7AB730; /* Changed color for "BOARDING PASS" */
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.ticket .details {
+    font-size: 24px;
+    line-height: 1.6;
+}
+
+.barcode {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.barcode img {
+    width: 200px;
+}
+
+.ticket .right .barcode {
+    padding-top: 50px;
+    border-top: 1px solid #ddd;
+}
